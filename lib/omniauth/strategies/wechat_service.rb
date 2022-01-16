@@ -15,7 +15,8 @@ module OmniAuth
         {
           nickname: raw_info['nickname'],
           city: raw_info['city'],
-          avatar: raw_info['headimgurl']
+          avatar: raw_info['headimgurl'],
+          openid: access_token['openid']
         }
       end
 
