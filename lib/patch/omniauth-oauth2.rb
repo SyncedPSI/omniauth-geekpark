@@ -17,4 +17,8 @@ class OmniAuth::Strategies::OAuth2
   rescue ::SocketError => e
     fail!(:failed_to_connect, e)
   end
+
+  def callback_url
+    full_host + script_name + callback_path
+  end
 end
