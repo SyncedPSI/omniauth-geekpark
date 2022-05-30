@@ -11,11 +11,14 @@ module OmniAuth
 
       info do
         {
+          username: raw_info['username'],
           nickname: raw_info['name'],
-          avatar_url: raw_info['avatar_url'],
+          avatar: raw_info['avatar'],
           email: raw_info['email'],
+          mobile: raw_info['mobile'],
           bio: raw_info['bio'],
-          pubinfo: raw_info['pubinfo']
+          pubinfo: raw_info['pubinfo'],
+          union_id: raw_info['unionid']
         }
       end
 
