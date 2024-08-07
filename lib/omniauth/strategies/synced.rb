@@ -17,6 +17,7 @@ module OmniAuth
           email: raw_info['email'],
           mobile: raw_info['mobile'],
           bio: raw_info['bio'],
+          verify_mobile: raw_info['verify_mobile'],
           pubinfo: raw_info['pubinfo'],
           union_id: raw_info['unionid']
         }
